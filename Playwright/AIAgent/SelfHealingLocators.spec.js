@@ -31,7 +31,7 @@ class LocatorCache {
     this.cache.set(originalKey, strategy);
     const obj = Object.fromEntries(this.cache);
     fs.writeFileSync(this.cacheFilePath, JSON.stringify(obj, null, 2));
-    console.log(`💾 Saved healing info to: ${this.cacheFilePath}`);
+    console.log(`Saved healing info to: ${this.cacheFilePath}`);
   }
 
   tryGetHealedLocator(originalKey) {
@@ -64,7 +64,7 @@ class SelfHealingLocators {
         console.log(`Found cached healing for ${this.originalKey}: ${cached.value}`);
         element = await this._probe(cached);
         if (element) return element;
-        console.warn(`⚠️ Cached locator failed. Re-healing required.`);
+        console.warn(`Cached locator failed. Re-healing required.`);
     }
 
     // 3. AI Healing
