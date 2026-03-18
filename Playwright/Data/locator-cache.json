@@ -1,0 +1,14 @@
+{
+    "xpath://input[@id=\"wrongusername\"]": {
+      "type": "xpath",
+      "value": "//input[@id=\"username\"]"
+    },
+    "xpath://input[@id=\"wrongPassword\"]": {
+      "type": "xpath",
+      "value": "//input[@id=\"password\"]"
+    },
+    "xpath://input[@id=\"wrongLoginBtn\"]": {
+      "type": "xpath",
+      "value": "//button[@type=\"submit\"]"
+    }
+  }
