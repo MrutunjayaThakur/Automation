@@ -1,5 +1,5 @@
 const { test: base, expect } = require('@playwright/test');
-const { SelfHealingLocators, LocatorCache } = require('../AIAgent/SelfHealingLocators.spec.js');
+const { SelfHealingLocators, LocatorCache } = require('../AIAgent/SelfHealingLocator/SelfHealingLocators.spec.js');
 
 const sharedCache = new LocatorCache();
 
